@@ -236,7 +236,7 @@ public class ChessPiece // And board
         return legalmove;
     }
 
-    public boolean castle() // can only go negative 
+    public boolean castle() 
     {
         if (xPos != xM && yPos == yM) {
             int x = xPos;
@@ -309,7 +309,7 @@ public class ChessPiece // And board
         return legalmove;
     }
 
-    public boolean king() //need to add Castling 
+    public boolean king() 
     {
         if (Math.abs(xPos - xM) <= 1 && Math.abs(yPos - yM) <= 1) {
             legalmove = true;
@@ -382,7 +382,7 @@ public class ChessPiece // And board
         return legalmove;
     }
 
-    public void movePiece() // moves piece also checks for castling  // also needs code for enPassent 
+    public void movePiece() // moves piece also checks for castling 
     {
         turncount++;
 
@@ -485,7 +485,7 @@ public class ChessPiece // And board
             }
         }
 
-        Board[xMovementStore][yMovementStore] = Board[xPositionStore][yPositionStore]; //temporaryily move piece to check if legal
+        Board[xMovementStore][yMovementStore] = Board[xPositionStore][yPositionStore]; //temp move piece to check if legal
         Board[xPositionStore][yPositionStore] = 0;
 
         for (int x = 0; x < Board.length; x++) {
