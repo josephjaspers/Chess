@@ -7,4 +7,4 @@ Highlights all possible movements of the targeted piece.
 Supports en passant and Castling.
 
 
-https://user-images.githubusercontent.com/20384345/35011918-e1b28360-fad5-11e7-94f3-ffe79572ca1c.png
+![BlacksTurn]https://user-images.githubusercontent.com/20384345/35011918-e1b28360-fad5-11e7-94f3-ffe79572ca1c.png
